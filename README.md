@@ -1,5 +1,5 @@
 # BakingSoc
-
+6
 The official website for the University of St Andrews' Baking Society!
 Nom nom, we eat the cookies so you don't have to accept them :>
 
