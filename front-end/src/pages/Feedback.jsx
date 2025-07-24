@@ -16,7 +16,7 @@ function Feedback() {
             <div className="form-container">
                 <h2>Feedback form</h2>
                 <form className="feedback-form" onSubmit={handleSubmit}>
-                    <label htmlFor="email">Anonymous/Email:</label>
+                    <label htmlFor="email">Email (optional):</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="anonymous or youremail@gmail.com" id="email" name="email" />
                     <br></br>
                     <label htmlFor="feedback">Feedback:</label>
