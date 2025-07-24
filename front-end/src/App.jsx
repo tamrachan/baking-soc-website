@@ -1,10 +1,10 @@
 import './css/App.css';
 import Home from "./pages/Home";
-import Favourites from "./pages/Favourites";
 import Recipes from './pages/Recipes';
 import Feedback from './pages/Feedback';
 import {Routes, Route} from "react-router-dom";
 import NavBar from './components/NavBar';
+import Contribution from './pages/Contribution';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/recipes" element={<Recipes />}/>
-          <Route path="/favourites" element={<Favourites />}/>
+          <Route path="/contribution" element={<Contribution />}/>
           <Route path="/feedback" element={<Feedback />}/>
         </Routes>
       </main>

@@ -12,15 +12,16 @@ function RecipeCard({recipe}) {
                 <img src={moveBy.url} alt={recipe.title}/>
                 <div className="recipe-overlay">
                     <button className="fav-btn" onClick={onFavClick}>
-                        ♡
+                        View recipe
                     </button>
                 </div>
             </div>
             <div className="recipe-info">
                 <h3>{recipe.title}</h3>
-                <p>{recipe.description}</p>
-                <p>{recipe.release_date}</p>
-                <p>{recipe.author}</p>
+                <h4>{recipe.time}</h4>
+                <h4>{recipe.allegens}</h4>
+                <p>{recipe.updated}</p>
+                <p>{recipe.source}</p>
             </div>
         </div>
     )
