@@ -1,6 +1,11 @@
 # BakingSoc
+<<<<<<< HEAD
 
 The official website for the University of St Andrews' Baking Society!  
+=======
+6
+The official website for the University of St Andrews' Baking Society!
+>>>>>>> e4f4f1f373d488efca66a17f6b1a7a913f297534
 Nom nom, we eat the cookies so you don't have to accept them :>
 
 ## Prerequisites
