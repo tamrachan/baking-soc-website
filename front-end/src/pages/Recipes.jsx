@@ -6,7 +6,10 @@ function Recipes() {
     const [searchQuery, setSearchQuery] = useState("");
 
     const recipes = [
-        {id: 1, title: "Matcha Brownies", time: "30 mins", allegens: "lactose-free, nut-free", updated: "yesterday", source: "Anonymous"}
+        {id: 1, title: "Matcha Brownies", time: "30 mins", allergens: "gluten-free, nut-free", updated: "27/08/2025", source: "Anonymous"},
+        {id: 2, title: "Chocolate Brownies", time: "45 mins", allergens: "gluten-free, nut-free", updated: "27/08/2025", source: "Baking Soc"},
+        {id: 3, title: "Butter Cookies", time: "30 mins", allergens: "gluten-free, egg-free, dairy-free", updated: "27/08/2025", source: "Baking Soc"},
+        {id: 4, title: "Baking Soc Cupcakes", time: "1hr 30 mins", allergens: "gluten-free, lactose-free, dairy-free", updated: "27/08/2025", source: "Baking Soc"}
     ]
 
     const handleSearch = (e) => {
