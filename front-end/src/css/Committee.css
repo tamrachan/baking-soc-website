@@ -103,4 +103,7 @@
         width: 150px;
         height: 150px;
     }
+    .committee-title {
+        font-size: 2rem;
+    }
 }
