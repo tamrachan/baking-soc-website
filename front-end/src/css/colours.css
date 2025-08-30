@@ -1,0 +1,12 @@
+/* Theme colours */
+:root {
+  /* Primary colours */
+  --primary-black: #000000;
+  --primary-purple: #431253;
+  --primary-white: #FEFFFF;
+
+  /* Secondary colours */
+  --secondary-peach: #E19787;
+  --secondary-yellow: #DABB7B;
+  --secondary-brown: #4B3100;
+}

@@ -1,5 +1,7 @@
+@import './colours.css';
+
 .navbar {
-  background-color: #431253;
+  background-color: var(--primary-purple);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -25,7 +27,7 @@
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-purple);
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/Feedback.css"
+import "../css/Feedback.css";
 
 function Contribution() {
     const [email, setEmail] = useState('');
@@ -15,7 +15,7 @@ function Contribution() {
         <div className="feedback">
             <div className="form-container">
                 <h2>Contribute a recipe form</h2>
-                <form className="contribution-form" onSubmit={handleSubmit}>
+                <form className="feedback-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@st-andrews.ac.uk" id="email" name="email" />
                     <br></br>

@@ -1,8 +1,10 @@
+@import './colours.css';
+
 .recipe-card {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #1a1a1a;
+  background-color: var(--primary-purple);
   transition: transform 0.2s;
   height: 100%;
   display: flex;

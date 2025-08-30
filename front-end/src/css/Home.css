@@ -1,0 +1,6 @@
+.logo {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+  /* will-change: transform; */
+}
