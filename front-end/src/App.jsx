@@ -1,132 +1,73 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import './css/App.css';
 
+// Import all your page and component assets
 import Home from "./pages/Home";
 import Committee from "./pages/Committee";
+import Events from "./pages/Events";
 import Recipes from './pages/Recipes';
-import RecipeDetail from './pages/RecipeDetail';
-import Feedback from './pages/Feedback';
 import Contribution from './pages/Contribution';
-import Events from './pages/Events';
+import Feedback from './pages/Feedback';
+import RecipeDetail from './pages/RecipeDetail';
 
 import NavBar from './components/NavBar';
-// import AppLayout from './layouts/AppLayout'; // A new layout component
+import Footer from "./components/Footer"; // Make sure this is pointing to the components folder
 
-// We create a layout component to hold the single-page scroll content
-function AppLayout() {
+/**
+ * MainLayout Component
+ * This component acts as the main wrapper for your application.
+ * It ensures that the NavBar and Footer are always visible, and the <Outlet>
+ * renders the specific page content based on the current URL.
+ */
+function MainLayout() {
+  return (
+    <div className="app-container">
+      <NavBar />
+      <main className="content-wrap">
+        <Outlet /> {/* This is where child routes will be rendered */}
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+/**
+ * SinglePageContent Component
+ * This component contains all the sections for your main scrolling homepage.
+ * It will be rendered inside the MainLayout's <Outlet> when the path is "/".
+ */
+function SinglePageContent() {
     return (
-        <main className="main-content">
+        <>
             <div id="home"><Home /></div>
             <div id="committee"><Committee /></div>
             <div id="events"><Events /></div>
             <div id="recipes"><Recipes /></div>
             <div id="contribution"><Contribution /></div>
             <div id="feedback"><Feedback /></div>
-        </main>
+        </>
     );
 }
 
-
+/**
+ * The Main App Component
+ * This is the root of your application, containing only the routing logic.
+ */
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<AppLayout />} />
-        <Route path="/recipe/:title" element={<RecipeDetail />} />
-      </Routes>
-    </div>
+    <Routes>
+      {/* All routes are now nested inside the MainLayout */}
+      <Route path="/" element={<MainLayout />}>
+        
+        {/* The 'index' route renders SinglePageContent at the root path "/" */}
+        <Route index element={<SinglePageContent />} />
+        
+        {/* The recipe detail route renders inside the MainLayout */}
+        <Route path="recipe/:title" element={<RecipeDetail />} />
+
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
-
-
-// import './css/App.css';
-
-// import Home from "./pages/Home";
-// import Committee from "./pages/Committee";
-// import Recipes from './pages/Recipes';
-// import RecipeDetail from './pages/RecipeDetail';
-// import Feedback from './pages/Feedback';
-// import Contribution from './pages/Contribution';
-// import Events from './pages/Events';
-
-// import NavBar from './components/NavBar';
-
-// function AppLayout() {
-//   return (
-//     <div className='app-layout'>
-//       <NavBar />
-//       <main className="main-content">
-//         <div id="home">
-//           <Home />
-//         </div>
-//         <div id="committee">
-//           <Committee />
-//         </div>
-//         <div id="events">
-//           <Events />
-//         </div>
-//         <div id="recipes">
-//           <Recipes />
-//         </div>
-//         <div id="contribution">
-//           <Contribution />
-//         </div>
-//         <div id="feedback">
-//           <Feedback />
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
-
-
-// function App() {
-//   return (
-//     <div>
-//       <NavBar />
-//       <Routes>
-//         <Route path="/" element={<AppLayout />} />
-//         <Route path="/recipe/:title" element={<RecipeDetail />} />
-//       </Routes>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// import './css/App.css';
-// import {Routes, Route} from "react-router-dom";
-
-// import Home from "./pages/Home";
-// import Recipes from './pages/Recipes';
-// import Feedback from './pages/Feedback';
-// import Contribution from './pages/Contribution';
-// import Events from './pages/Events';
-
-// import NavBar from './components/NavBar';
-
-
-// function App() {
-//   return (
-
-//     <div>
-//       <NavBar />
-//       <main className="main-content">
-//         <Routes>
-//           <Route path="/" element={<Home />}/>
-//           <Route path="/recipes" element={<Recipes />}/>
-//           <Route path="/contribution" element={<Contribution />}/>
-//           <Route path="/events" element={<Events />}/>
-//           <Route path="/feedback" element={<Feedback />}/>
-//         </Routes>
-//       </main>
-//     </div>
-//   );
-// }
-
-// export default App;
-

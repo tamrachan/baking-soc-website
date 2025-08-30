@@ -1,0 +1,48 @@
+@import './colours.css';
+
+.site-footer {
+    background-color: var(--primary-purple);
+    color: var(--primary-white);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border-top: 4px solid var(--accent-color);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.footer-links a {
+    color: var(--primary-white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-purple-light);
+    text-decoration: underline;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #e0d8ff; /* A lighter colour */
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        /* This changes the layout from a row to a column */
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
