@@ -1,23 +1,34 @@
-// src/components/NavBar.jsx
-
-import { HashLink as Link } from 'react-router-hash-link'; // Import HashLink and alias it as Link
+import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import "../css/NavBar.css";
 
 function NavBar() {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    // This function will be called when a link is clicked, closing the menu
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                {/* This link should always go to the top of the homepage */}
-                <Link smooth to="/#home">BakingSoc</Link>
+                <Link smooth to="/#home" onClick={handleLinkClick}>BakingSoc</Link>
             </div>
-            <div className="navbar-links">
-                {/* Use the HashLink component for all section links */}
-                <Link smooth to="/#home" className="nav-link">Home</Link>
-                <Link smooth to="/#committee" className="nav-link">Committee</Link>
-                <Link smooth to="/#events" className="nav-link">Events</Link>
-                <Link smooth to="/#recipes" className="nav-link">Recipes</Link>
-                <Link smooth to="/#contribution" className="nav-link">Contribute a recipe</Link>
-                <Link smooth to="/#feedback" className="nav-link">Feedback</Link>
+
+            {/* The hamburger menu button, visible only on mobile */}
+            <button className="menu-toggle" onClick={() => setMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+                <div className={`hamburger ${isMenuOpen ? 'open' : ''}`}></div>
+            </button>
+
+            {/* Add the 'open' class when the menu is active */}
+            <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+                <Link smooth to="/#home" className="nav-link" onClick={handleLinkClick}>Home</Link>
+                <Link smooth to="/#committee" className="nav-link" onClick={handleLinkClick}>Committee</Link>
+                <Link smooth to="/#events" className="nav-link" onClick={handleLinkClick}>Events</Link>
+                <Link smooth to="/#recipes" className="nav-link" onClick={handleLinkClick}>Recipes</Link>
+                <Link smooth to="/#contribution" className="nav-link" onClick={handleLinkClick}>Contribute</Link>
+                <Link smooth to="/#feedback" className="nav-link" onClick={handleLinkClick}>Feedback</Link>
             </div>
         </nav>
     );

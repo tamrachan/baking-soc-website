@@ -14,13 +14,13 @@
 
 .mySwiper {
     width: 80%;
-    max-width: 600px;
+    max-width: 1000px;
     padding-bottom: 40px !important; /* Space for pagination dots */
 }
 
 .slide-content {
     color: var(--primary-white);
-    padding: 20px;
+    padding: 20px 100px 20px 100px;
 }
 
 /* .image-placeholder {

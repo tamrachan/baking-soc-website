@@ -7,6 +7,7 @@
     padding: 4rem 2rem;
     background-color: var(--primary-white);
     width: 100%;
+    min-height: 90vh;
 }
 
 .hero-inner-container {
@@ -14,10 +15,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px; /* This is the key property! */
+    max-width: 900px;
     gap: 2rem;
 }
-
 
 .hero-content {
     max-width: 600px;
@@ -25,7 +25,6 @@
 }
 
 .hero-title {
-    /* The new fluid font size */
     font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
     
     font-weight: bold;
@@ -34,7 +33,6 @@
 }
 
 .hero-subtitle {
-    /* The new fluid font size */
     font-size: clamp(1rem, 0.8rem + 1vw, 1.3rem);
 
     color: var(--secondary-text-color);
@@ -65,7 +63,7 @@
 
 .hero-logo {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
 }
 

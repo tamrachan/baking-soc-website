@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 function Home() {
     return (
         <section className="hero-section">
-            <div className="hero-inner-container"> {/* This is the new wrapper */}
+            <div className="hero-inner-container">
                 <div className="hero-content">
                     <h1 className="hero-title">Welcome to the Baking Society!</h1>
                     <p className="hero-subtitle">
@@ -25,4 +25,3 @@ function Home() {
 }
 
 export default Home;
-
