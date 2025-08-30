@@ -1,0 +1,74 @@
+@import './colours.css';
+
+.form-section {
+    padding: 4rem 2rem;
+    background-color: var(--primary-white);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--primary-purple);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--primary-white);
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.app-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-form label {
+    font-weight: bold;
+    color:  var(--primary-off-white);
+    margin-bottom: 0.25rem;
+}
+
+.app-form input, .app-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+}
+
+.app-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.app-form button {
+    background-color: var(--primary-off-white);
+    color:  var(--primary-purple);
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.app-form button:hover {
+    background-color: lightgray;
+}
+
+.status-message {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--primary-purple);
+}

@@ -1,6 +1,90 @@
-.logo {
-  width: 200px;
-  display: block;
-  margin: 20px auto;
-  /* will-change: transform; */
+@import './colours.css';
+
+.hero-section {
+    display: flex;
+    justify-content: center; /* Center the inner container horizontally */
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: var(--primary-white);
+    width: 100%;
+}
+
+.hero-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; /* This is the key property! */
+    gap: 2rem;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-title {
+    /* The new fluid font size */
+    font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+    
+    font-weight: bold;
+    color: var(--primary-purple);
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    /* The new fluid font size */
+    font-size: clamp(1rem, 0.8rem + 1vw, 1.3rem);
+
+    color: var(--secondary-text-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-purple);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-cta-button:hover {
+    background-color: var(--accent-color); /* A slightly different shade for hover */
+    transform: translateY(-3px);
+}
+
+.hero-image-container {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.hero-logo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* Animations for a dynamic entry */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .hero-inner-container {
+        flex-direction: column-reverse; /* Stacks image on top of text */
+        text-align: center;
+    }
 }

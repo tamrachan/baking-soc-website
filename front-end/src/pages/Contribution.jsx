@@ -1,35 +1,56 @@
 import { useState } from "react";
-import "../css/Feedback.css";
+import "../css/Forms.css"; // We'll use a shared CSS file
 
 function Contribution() {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [feedback, setFeedback] = useState('');
+    const [recipe, setRecipe] = useState('');
+    const [statusMessage, setStatusMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Email:', email);
-        console.log('Feedback:', pass);
-    }
+        setStatusMessage('Sending...');
+
+        try {
+            const response = await fetch('http://localhost:3001/api/contribution', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, recipe })
+            });
+
+            if (response.ok) {
+                setStatusMessage('Thank you for your contribution!');
+                setName('');
+                setEmail('');
+                setRecipe('');
+            } else {
+                setStatusMessage('Something went wrong. Please try again.');
+            }
+        } catch (error) {
+            setStatusMessage('Error: Could not send contribution.');
+        }
+    };
 
     return (
-        <div className="feedback">
+        <div id="contribution" className="form-section">
             <div className="form-container">
-                <h2>Contribute a recipe form</h2>
-                <form className="feedback-form" onSubmit={handleSubmit}>
-                    <label htmlFor="email">Email:</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@st-andrews.ac.uk" id="email" name="email" />
-                    <br></br>
+                <h2>Contribute a Recipe</h2>
+                <form className="app-form" onSubmit={handleSubmit}>
                     <label htmlFor="name">Name:</label>
-                    <input value={name} onChange={(e) => setEmail(e.target.value)} type="name" placeholder="anonymous or your name" id="name" name="name" />
-                    <br></br>
-                    <label htmlFor="feedback">Recipe contribution:</label>
-                    <input value={feedback} onChange={(e) => setFeedback(e.target.value)} type="text" placeholder="Type your recipe here..." id="contribution" name="contribution" />
-                    <br></br>
-                    <button type="submit">Submit</button>
+                    <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Your Name" id="name" name="name" required />
+
+                    <label htmlFor="email">Email:</label>
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@st-andrews.ac.uk" id="email" name="email" required />
+
+                    <label htmlFor="recipe">Your Recipe:</label>
+                    <textarea value={recipe} onChange={(e) => setRecipe(e.target.value)} placeholder="Please include ingredients and instructions..." id="recipe" name="recipe" required />
+                    
+                    <button type="submit">Submit Recipe</button>
+                    {statusMessage && <p className="status-message">{statusMessage}</p>}
                 </form>
             </div>
         </div>
-    )
+    );
 }
 
 export default Contribution;

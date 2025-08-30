@@ -1,63 +1,98 @@
-.home {
-  padding: 2rem 0;
-  width: 100%;
-  box-sizing: border-box;
+@import './colours.css';
+
+.recipes-section {
+    background-color: var(--primary-purple);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--primary-white);
+}
+
+.recipes-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.recipes-subtitle {
+    font-size: 1.2rem;
+    color: #e0d8ff;
+    margin-bottom: 3rem;
 }
 
 .search-form {
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  display: flex;
-  gap: 1rem;
-  padding: 0 1rem;
-  box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto 3rem;
 }
 
 .search-input {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: white;
-  font-size: 1rem;
-}
-
-.search-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #666;
-}
-
-.search-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #431253;
-  color: white;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.2s;
-  white-space: nowrap;
-}
-
-.search-button:hover {
-  background-color: #431253;
-}
-
-
-@media (max-width: 639px) {
-  .home {
-    padding: 1rem 0;
-  }
-
-  .search-form {
-    margin-bottom: 1rem;
-  }
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--primary-black);
+    background-color: var(--primary-white);
 }
 
 .recipes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+    display: grid;
+    gap: 2rem; /* Increased gap for better spacing with images */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.recipe-card {
+    background-color: var(--primary-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* Important for keeping the image within the border-radius */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* New style for the recipe card image */
+.recipe-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for a uniform look */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* New container for the text content */
+.recipe-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows this section to fill remaining space */
+    color: var(--primary-purple);
+}
+
+.recipe-card h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.4rem;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.view-recipe-button {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.view-recipe-button:hover {
+    background-color: var(--accent-color);
+}
+
+.no-results-message {
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    margin-top: 2rem;
 }

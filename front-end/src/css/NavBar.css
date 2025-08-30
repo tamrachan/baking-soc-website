@@ -1,6 +1,10 @@
 @import './colours.css';
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: var(--primary-purple);
   padding: 1rem 2rem;
   display: flex;

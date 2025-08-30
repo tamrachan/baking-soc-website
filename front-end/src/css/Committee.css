@@ -1,0 +1,84 @@
+@import './colours.css';
+
+.committee-container {
+    background-color: var(--primary-purple);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.committee-title {
+    font-size: 2.5rem;
+    color: var(--primary-white);
+    margin-bottom: 2rem;
+}
+
+.mySwiper {
+    width: 80%;
+    max-width: 600px;
+    padding-bottom: 40px !important; /* Space for pagination dots */
+}
+
+.slide-content {
+    color: var(--primary-white);
+    padding: 20px;
+}
+
+/* .image-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--primary-white);
+    color: var(--primary-purple);
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+} */
+
+.committee-member-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;    /* Prevents the image from being stretched */
+    margin: 0 auto 1.5rem auto;
+    border: 5px solid var(--primary-white); /* Adds a nice border */
+}
+
+.slide-content h3 {
+    font-size: 1.75rem;
+    color: var(--primary-white);
+    margin: 0;
+}
+
+.slide-content h4 {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #e0d8ff;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.slide-content p {
+    line-height: 1.6;
+}
+
+/*
+ * --- Styling Swiper's Built-In Arrows and Dots ---
+ */
+
+/* Change arrow color */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    color: var(--primary-white) !important;
+}
+
+/* Change pagination dot color */
+.mySwiper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Change active dot color */
+.mySwiper .swiper-pagination-bullet-active {
+    background: var(--primary-white) !important;
+}

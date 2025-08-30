@@ -1,23 +1,31 @@
+import React from 'react';
+import { upcomingEvents } from '../constants/events'; // Import the data
 import "../css/Events.css";
 
 function Events() {
-
     return (
-        <div className="events">
-            <h1>Events</h1>
+        <div id="events" className="events-section">
+            <h2 className="events-title">Upcoming Events</h2>
+            <p className="events-subtitle">Join us for some baking fun! Here's what we have planned.</p>
             
-            <p>View upcoming events:</p>
             <div className="events-grid">
-                <div className="events-card">
-                    <h3>EVENT TITLE</h3>
-                    <h4>Date: </h4>
-                    <h4>Time: </h4>
-                    <h4>Cost: </h4>
-                    <p className="events-desc">Event description...</p>
-                </div>
+                {upcomingEvents.map((event) => (
+                    <div key={event.id} className="event-card">
+                        <div className="event-card-header">
+                            <h3>{event.title}</h3>
+                        </div>
+                        <div className="event-card-body">
+                            <p><strong>Date:</strong> {event.date}</p>
+                            <p><strong>Time:</strong> {event.time}</p>
+                            <p><strong>Location:</strong> {event.location}</p>
+                            <p><strong>Cost:</strong> {event.cost}</p>
+                            <p className="event-desc">{event.description}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Events;

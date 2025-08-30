@@ -15,7 +15,7 @@ function RecipeCard({ recipe }) {
                     alt={recipe.title}
                 />
                 <div className="recipe-overlay">
-                    <button className="fav-btn" onClick={showRecipe}>
+                    <button className="recipe-btn" onClick={showRecipe}>
                         View recipe
                     </button>
                 </div>

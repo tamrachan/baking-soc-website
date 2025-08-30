@@ -1,46 +1,76 @@
+@import './colours.css';
+
+.events-section {
+    padding: 4rem 2rem;
+    background-color: var(--primary-white);
+    text-align: center;
+}
+
+.events-title {
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+    margin-bottom: 0.5rem;
+}
+
+.events-subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .events-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); autofit*/
-  gap: 2rem;
-  padding: 2rem;
-  justify-items: center;
+    display: grid;
+    /* This creates a responsive grid that fits as many 300px columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-.events-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.event-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures the header stays within the border radius */
+    display: flex;
+    flex-direction: column;
 }
 
-.events-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-.events-desc {
-  font-size: 0.95rem;
-  color: #555;
-  margin: 0;
+.event-card-header {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 1rem 1.5rem;
 }
 
-@media (max-width: 768px) {
-  .events-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.event-card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
-@media (max-width: 480px) {
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
+.event-card-body {
+    padding: 1.5rem;
+    flex-grow: 1; /* Allows the body to fill available space */
+}
+
+.event-card-body p {
+    margin: 0 0 0.75rem 0;
+    line-height: 1.6;
+}
+
+.event-card-body p strong {
+    color: var(--primary-purple);
+}
+
+.event-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 1rem !important;
 }
