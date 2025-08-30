@@ -23,7 +23,6 @@
 
 .events-grid {
     display: grid;
-    /* This creates a responsive grid that fits as many 300px columns as possible */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
@@ -73,4 +72,11 @@
     font-size: 0.95rem;
     color: #555;
     margin-top: 1rem !important;
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }

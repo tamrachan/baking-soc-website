@@ -76,10 +76,10 @@
     /* --- Hamburger Button and Icon Styles --- */
 
     .menu-toggle {
-        display: flex; /* Changed to flex to center the icon */
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px; /* Give the button a fixed size */
+        width: 40px;
         height: 40px;
         background: none;
         border: none;
@@ -92,8 +92,6 @@
         position: relative;
         width: 25px;
         height: 3px;
-        /* THE FIX IS HERE: We set the background on the ::before and ::after pseudo-elements */
-        /* and leave the main element transparent. */
         background: transparent; /* The main element is always transparent */
         transition: all 0.3s ease;
     }
@@ -105,7 +103,7 @@
         left: 0;
         width: 25px;
         height: 3px;
-        background-color: white; /* The color is applied to the bars */
+        background-color: white; /* The colour is applied to the bars */
         transition: all 0.3s ease-in-out;
     }
 

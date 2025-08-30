@@ -19,6 +19,7 @@ function Committee() {
                 slidesPerView={1}
                 navigation={true}
                 pagination={{ clickable: true }}
+                centeredSlides={true}
                 loop={true}
                 autoplay={{
                     delay: 5000,

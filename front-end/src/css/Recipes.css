@@ -35,7 +35,7 @@
 
 .recipes-grid {
     display: grid;
-    gap: 2rem; /* Increased gap for better spacing with images */
+    gap: 2rem; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -95,4 +95,14 @@
     grid-column: 1 / -1;
     font-size: 1.2rem;
     margin-top: 2rem;
+}
+
+@media (max-width: 639px) {
+    .recipes-section {
+        padding: 2rem 1rem;
+    }
+    
+    .recipes-grid {
+        justify-items: center;
+    }
 }

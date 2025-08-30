@@ -20,7 +20,7 @@
 
 .slide-content {
     color: var(--primary-white);
-    padding: 20px 100px 20px 100px;
+    /* padding: 20px 100px 20px 100px; */
 }
 
 /* .image-placeholder {
@@ -61,6 +61,7 @@
 
 .slide-content p {
     line-height: 1.6;
+    padding: 20px 100px 20px 100px;
 }
 
 /*
@@ -81,4 +82,25 @@
 /* Change active dot color */
 .mySwiper .swiper-pagination-bullet-active {
     background: var(--primary-white) !important;
+}
+
+/*
+ * --- Mobile-Specific Committee Styles ---
+ */
+@media (max-width: 768px) {
+    .slide-content p {
+        display: none;
+    }
+
+    .slide-content h3 {
+        font-size: 1.4rem;
+    }
+    .slide-content h4 {
+        font-size: 1.0rem;
+    }
+
+    .committee-member-image {
+        width: 150px;
+        height: 150px;
+    }
 }
