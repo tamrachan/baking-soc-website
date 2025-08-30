@@ -6,9 +6,10 @@ import Home from "./pages/Home";
 import Committee from "./pages/Committee";
 import Events from "./pages/Events";
 import Recipes from './pages/Recipes';
-import Contribution from './pages/Contribution';
-import Feedback from './pages/Feedback';
+// import Contribution from './pages/Contribution';
+// import Feedback from './pages/Feedback';
 import RecipeDetail from './pages/RecipeDetail';
+import GetInTouch from './pages/GetInTouch';
 
 import NavBar from './components/NavBar';
 import Footer from "./components/Footer"; // Make sure this is pointing to the components folder
@@ -43,8 +44,9 @@ function SinglePageContent() {
             <div id="committee"><Committee /></div>
             <div id="events"><Events /></div>
             <div id="recipes"><Recipes /></div>
-            <div id="contribution"><Contribution /></div>
-            <div id="feedback"><Feedback /></div>
+            <div id="get-in-touch"><GetInTouch /></div>
+            {/* <div id="contribution"><Contribution /></div>
+            <div id="feedback"><Feedback /></div> */}
         </>
     );
 }

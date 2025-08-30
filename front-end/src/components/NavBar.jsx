@@ -27,8 +27,9 @@ function NavBar() {
                 <Link smooth to="/#committee" className="nav-link" onClick={handleLinkClick}>Committee</Link>
                 <Link smooth to="/#events" className="nav-link" onClick={handleLinkClick}>Events</Link>
                 <Link smooth to="/#recipes" className="nav-link" onClick={handleLinkClick}>Recipes</Link>
-                <Link smooth to="/#contribution" className="nav-link" onClick={handleLinkClick}>Contribute</Link>
-                <Link smooth to="/#feedback" className="nav-link" onClick={handleLinkClick}>Feedback</Link>
+                <Link smooth to="/#get-in-touch" className="nav-link" onClick={handleLinkClick}>Get in Touch</Link>
+                {/* <Link smooth to="/#contribution" className="nav-link" onClick={handleLinkClick}>Contribute</Link>
+                <Link smooth to="/#feedback" className="nav-link" onClick={handleLinkClick}>Feedback</Link> */}
             </div>
         </nav>
     );
