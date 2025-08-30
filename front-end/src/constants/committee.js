@@ -13,13 +13,13 @@ export const committeeMembers = [
     },
     {
         name: 'Bao Thy Nguyen',
-        role: 'Treasurer',
+        role: 'Events Coordinator',
         image: '/committee-images/thy.jpg',
         bio: "Hi!! You can just call me by my nickname T. I manage the society's Instagram account & create all the content you see like the animation promo & committee posts 🐈‍⬛ I'll also be helping to facilitate the society's future events together with our committee. Can't wait to meet you all~~ whether you love to bake, want to learn or just want to hangout, everyone is welcome to join. I hope you'll have lots of fun at our future events and make many good memories."
     },
     {
         name: 'Ona Wright',
-        role: 'Events Coordinator',
+        role: 'Treasurer',
         image: '/committee-images/ona.jpg',
         bio: "Hello~ my name is Ona Wright and I'm the Treasurer for the Baking Society. I'm one of the few members who hasn't done a lot of baking, so come find me if you need someone to commiserate... or of course if you have any questions about the society! (I will say though that I am an expert at 'getting a sweet treat' so hopefully that counts for something hehehe~)"
     },
