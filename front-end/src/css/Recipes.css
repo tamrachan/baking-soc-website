@@ -68,6 +68,18 @@
     flex-direction: column;
     flex-grow: 1; /* Allows this section to fill remaining space */
     color: var(--primary-purple);
+    align-items: center;
+}
+
+.recipe-details {
+    width: 100%; /* Allows it to fill the space */
+    align-self: flex-start; /* Override the parent's centering */
+    text-align: left; /* Ensure text inside is left-aligned */
+    margin-bottom: 1.5rem; /* Creates space below the allergens */
+}
+
+.recipe-details p {
+    margin: 0.25rem 0;
 }
 
 .recipe-card h3 {
@@ -77,6 +89,9 @@
 }
 
 .view-recipe-button {
+    margin-top: 20px; 
+    width: 80%; /* Give the button a relative width */
+    max-width: 200px;
     background-color: var(--primary-purple);
     color: white;
     padding: 0.75rem 1.5rem;

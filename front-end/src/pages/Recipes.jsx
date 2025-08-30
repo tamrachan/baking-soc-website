@@ -29,10 +29,14 @@ function Recipes() {
                 {filteredRecipes.length > 0 ? (
                     filteredRecipes.map(recipe => (
                         <div key={recipe.title} className="recipe-card">
-                            {/* --- Add the image here --- */}
+                            
                             <img src={recipe.image} alt={`A photo of ${recipe.title}`} className="recipe-card-image" />
                             <div className="recipe-card-content">
                                 <h3>{recipe.title}</h3>
+                                <div className="recipe-details">
+                                    <p><strong>Time: </strong>{recipe.time}</p>
+                                    <p><strong>Allergens: </strong>{recipe.allergens}</p>
+                                </div>
                                 <Link to={`/recipe/${encodeURIComponent(recipe.title)}`} className="view-recipe-button">
                                     View Recipe
                                 </Link>

@@ -24,6 +24,8 @@
       "Let cool completely before slicing (or eat warm)."
     ],
     "image": "/recipe-images/chocolate_brownies.jpg",
+    "time": "45 mins", 
+    "allergens": "gluten-free, nut-free",
     "updated": "30/08/2025",
     "source": "Baking Society"
   },
@@ -64,6 +66,8 @@
       "Decorate: pipe frosting with a star tip, sprinkle with sugar pearls, and add toppers."
     ],
     "image": "/recipe-images/baking_soc_cupcakes.jpg",
+    "time": "1hr 30 mins", 
+    "allergens": "gluten-free, lactose-free, dairy-free",
     "updated": "30/08/2025",
     "source": "Baking Society"
   },
@@ -90,6 +94,8 @@
       "Store in an airtight container at room temperature for up to a week."
     ],
     "image": "/recipe-images/butter_cookies.jpg",
+    "time": "30 mins", 
+    "allergens": "gluten-free, egg-free, dairy-free",
     "updated": "30/08/2025",
     "source": "Baking Society"
   },
@@ -114,7 +120,9 @@
       "Note: Brownies improve in flavor with time. Store well-sealed for long shelf life, suitable for gifting or mailing as snacks."
     ],
     "image": "/recipe-images/matcha_brownies.jpg",
+    "time": "30 mins",
+    "allergens": "gluten-free, nut-free",
     "updated": "30/08/2025",
-    "source": "Baking Society"
+    "source": "Anonymous"
   }
 ]
