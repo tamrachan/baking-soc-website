@@ -50,7 +50,8 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--secondary-peach);
+  color: var(--color-purple-700);
+  outline: 4px auto var(--color-purple-700);
 }
 
 h1 {
