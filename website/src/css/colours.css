@@ -1,0 +1,26 @@
+/* Theme colours */
+:root {
+  /* Primary colours */
+  --primary-black: #000000;
+  --primary-purple: #431253;
+  --primary-white: #FEFFFF;
+  --primary-off-white: #f9f9f9;
+
+  /* Secondary colours */
+  --secondary-peach: #E19787;
+  --secondary-yellow: #DABB7B;
+  --secondary-brown: #4B3100;
+
+  /* Purple colours */
+  --primary-purple-50: #fbf6fd;
+  --primary-purple-100: #f5ebfc;
+  --primary-purple-200: #ebd7f7;
+  --primary-purple-300: #ddb7f0;
+  --primary-purple-400: #c98be7;
+  --primary-purple-500: #b05ed7;
+  --primary-purple-600: #953fba;
+  --primary-purple-700: #7d319a;
+  --primary-purple-800: #682a7e;
+  --primary-purple-900: #582768;
+  --primary-purple-950: #431253;
+}
