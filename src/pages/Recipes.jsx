@@ -30,7 +30,7 @@ function Recipes() {
                     filteredRecipes.map(recipe => (
                         <div key={recipe.title} className="recipe-card">
                             
-                            <img src={recipe.image} alt={`A photo of ${recipe.title}`} className="recipe-card-image" />
+                            <img src={import.meta.env.BASE_URL + recipe.image} alt={`A photo of ${recipe.title}`} className="recipe-card-image" />
                             <div className="recipe-card-content">
                                 <h3>{recipe.title}</h3>
                                 <div className="recipe-details">
