@@ -15,6 +15,9 @@ function Home() {
               Join us for fun events, delicious recipes, and great company.
             </p>
             <a href="#events" className="hero-cta-button">Explore Our Events</a>
+            <br />
+            <br></br>
+            <a href="https://www.yourunion.net/activities/societies/explore/9725" className="membership-button">Buy a membership</a>
           </div>
           <div className="hero-image-container">
             <Tilt glareEnable={true} glareMaxOpacity={0.7}>
@@ -23,7 +26,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="membership-section">
+        {/* <div className="membership-section">
           <h2 className="membership-text">Buy a membership</h2>
           <a
             href="https://www.yourunion.net/activities/societies/explore/9725"
@@ -33,7 +36,7 @@ function Home() {
           >
             Join Now
           </a>
-        </div>
+        </div> */}
       </section>
     </>
   );
