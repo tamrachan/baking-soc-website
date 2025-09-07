@@ -41,7 +41,7 @@ function RecipeDetail() {
             </button>
 
              <h1 className="recipe-detail-title">{recipe.title}</h1>
-            <img src={recipe.image} alt={`A photo of ${recipe.title}`} className="recipe-detail-image" />
+            <img src={import.meta.env.BASE_URL + recipe.image} alt={`A photo of ${recipe.title}`} className="recipe-detail-image" />
             
             <div className="recipe-content">
                 <div className="ingredients-section">
