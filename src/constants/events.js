@@ -1,11 +1,11 @@
 export const upcomingEvents = [
     {
         id: 1,
-        title: "Making cookie dough 1 (Freshers session)",
-        date: "Tuesday 16th September, 2025",
-        time: "4:00 PM - 5:00 PM",
-        cost: "FREE",
-        location: "Chaplaincy (opposite the Union)",
-        description: "A hands-on workshop where you can meet other friendly bakers and make edible cookie dough!"
+        title: "EaCES x BakeSoc picnic",
+        date: "Tuesday 7th October, 2025",
+        time: "4:30 PM - 6:00 PM",
+        cost: "FREE - bring a bake!",
+        location: "Lower College Hall Lawn (opposite the Union)",
+        description: "A chill space to eat and chat, and meet new people! Committee members will also be sharing a lot of delicious bakes!"
     },
 ];
