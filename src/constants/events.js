@@ -5,7 +5,7 @@ export const upcomingEvents = [
         date: "Tuesday 7th October, 2025",
         time: "4:30 PM - 6:00 PM",
         cost: "FREE - bring a bake!",
-        location: "Lower College Hall Lawn (opposite the Union)",
+        location: "Lower College Hall Lawn",
         description: "A chill space to eat and chat, and meet new people! Committee members will also be sharing a lot of delicious bakes!"
     },
 ];
