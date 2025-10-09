@@ -1,11 +1,11 @@
 export const upcomingEvents = [
     {
         id: 1,
-        title: "EaCES x BakeSoc picnic",
-        date: "Tuesday 7th October, 2025",
-        time: "4:30 PM - 6:00 PM",
-        cost: "FREE - bring a bake!",
-        location: "Lower College Hall Lawn",
-        description: "A chill space to eat and chat, and meet new people! Committee members will also be sharing a lot of delicious bakes!"
+        title: "Mini Cheesecake Bake Session",
+        date: "Monday 13th October, 2025",
+        time: "5:30 PM - 7:00 PM",
+        cost: "£2 - members, £4 - non-members",
+        location: "Holy Trinity Church Hall",
+        description: "Join us to bake some delicious cheesecake and meet new people!"
     },
 ];
