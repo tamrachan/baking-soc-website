@@ -124,5 +124,87 @@
     "allergens": "gluten-free, nut-free",
     "updated": "30/08/2025",
     "source": "Anonymous"
+  },
+  {
+    "title": "Tartlet Shell Recipe",
+    "ingredients": [
+      "230g all purpose flour",
+      "80g icing sugar",
+      "A pinch of salt",
+      "120g unsalted butter",
+      "30g beaten eggs"
+    ],
+    "instructions": [
+      "Put the flour, icing sugar and salt into a bowl. Then mix.",
+      "And the butter to the bowl ‘rub in’ the butter with the flour mixture to make a crumbly dough.",
+      "Add the egg and knead the dough until smooth.",
+      "Wrap the dough in cling film and leave to rest in the fridge for 30 minutes.",
+      "Dust your work surface with flour and roll out the dough til it is about 4-5mm(0.15 inch) thick.",
+      "Use a cutter to cut out circles in the dough and drape them over the outsides of the buttered muffin tin.",
+      "Trim the excess and prick the bases with a fork.",
+      "Bake for 14 minutes at 170C"
+    ],
+    "image": "recipe-images/tarts.jpeg",
+    "time": "1hr 4mins",
+    "allergens": "nut-free",
+    "updated": "09/10/2025",
+    "source": "https://www.inlaurasbakery.com/how-to-make-tartlet-shells-easy-recipe/"
+  },
+  {
+    "title": "Mixed Berry Tart Filling Recipe",
+    "ingredients": [
+      "230g Frozen Mixed Berries",
+      "~40ml berry juice (from defrosted berries) ",
+      "1 tablespoon of cornstarch",
+      "40ml cold water ",
+      "20g granulated sugar",
+      "Pinch of salt",
+      "45g granulated sugar"
+
+    ],
+    "instructions": [
+      "Defrost and drain frozen berries. Reserve the juice from the thawed berries.",
+      "Add the cornstarch to a small bowl and dissolve by mixing with cold water.", 
+      "Place 20g granulated sugar into a saucepan.", 
+      "In a small bowl combine 45g of sugar and a pinch of salt and set aside for later.",
+      "Pour berry juice into the saucepan with the 20g of sugar. On medium-high heat, stirring occasionally until it begins boiling.",
+      "Lower the heat to medium, then add the cornstarch/water mixture to the pan and stir constantly until thick.",
+      "Add the sugar/salt mixture to the saucepan and stir until sugar is melted.",
+      "Remove pan from the heat and let it cool briefly.",
+      "Pour mixture over the berries and fold it in until all the berries are coated."
+    ],
+    "image": "recipe-images/tarts.jpeg",
+    "time": "15 mins",
+    "allergens": "nut-free",
+    "updated": "09/10/2025",
+    "source": "https://dessertswithstephanie.com/triple-berry-tart-recipe/"
+  },
+  {
+    "title": "No Bake Cookie Dough (6 balls)",
+    "ingredients": [
+      "⅜ (86g) cup butter, room temperature (use vegan or dairy-free if needed)",
+      "¼ (50g) cup granulated sugar",
+      "¼ (55g) cup firmly packed brown sugar",
+      "½ Tablespoon vanilla extract",
+      "¼ teaspoon salt",
+      "⅝ cups (75g) all purpose gluten-free flour",
+      "⅙ (30g) cup chocolate chips (or to your heart's content), dairy-free if needed"
+
+    ],
+    "instructions": [
+      "In a microwave safe bowl, place your measured gluten-free flour. Heat it for 60 seconds, or until it reaches a temperature of 165 degrees F. Stir to make sure the heat evenly distributes. Place the heat treated flour in the freezer for ten minutes while you make the rest of the recipe. If you use it when it's hot, it will melt the chocolate chips.",
+      "In a large mixing bowl, place your room temperature butter (needs to be soft) sugars and vanilla.", 
+      "Beat with electric beaters (or by hand) until creamed.", 
+      "Add your cooled gluten free flour and mix until combined.",
+      "Stir in your chocolate chips.",
+      "Shape into balls and enjoy.",
+      "To store, keep in an air tight container for up to one week, or freeze for up to 6 months."
+    ],
+    "image": "recipe-images/cookie_dough.jpeg",
+    "time": "10 mins",
+    "allergens": "gluten-free, nut-free",
+    "updated": "12/12/2025",
+    "source": "Anonymous"
   }
+
 ]
