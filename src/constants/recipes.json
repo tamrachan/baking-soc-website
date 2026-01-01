@@ -205,6 +205,57 @@
     "allergens": "gluten-free, nut-free",
     "updated": "12/12/2025",
     "source": "Anonymous"
+  },
+  {
+    "title": "12 Mini Baked Cheesecake",
+    "ingredients": [
+      "250g cream cheese (softened to room temperature)",
+      "½ cup granulated sugar",
+      "½ tsp vanilla essence",
+      "2 eggs",
+      "9 digestives (~135g)",
+      "60g melted butter"
+    ],
+    "instructions": [
+      "Preheat oven to 180C (160C fan)",
+      "Add digestives to a ziplock bag and crush them into fine crumbs.",
+      "Add the crushed biscuits and melted butter into a bowl and stir well to combine.",
+      "Place the mixture into the cupcake liners, flatten and set aside",
+      "Beat softened cream cheese, sugar, vanilla with electric mixer until smooth.",
+      "Add eggs and beat again until well combined.",
+      "Place cream cheese mixture evenly into the liners and bake for 15mins or until the centre wobbles lightly.",
+      "Remove from the oven and set aside to cool for 10 mins."
+    ],
+    "image": "recipe-images/12_mini_cheesecakes.jpeg",
+    "time": "50 mins",
+    "allergens": "nut-free",
+    "updated": "01/01/2026",
+    "source": "https://tilgoldenbrown.com/mini-baked-cheesecakes/"
+  },
+  {
+    "title": "Rocky Road",
+    "ingredients": [
+      "250g digestives",
+      "200g milk chocolate",
+      "50g dark chocolate",
+      "170g butter (or margarine)",
+      "15ml golden syrup",
+      "125g mini marshmallows",
+      "Any other inclusions"
+    ],
+    "instructions": [
+      "Add digestives to a ziplock bag and crush them into pieces(a mixture of anything between dust and 50p sized lumps)",
+      "In a saucepan, melt butter, chocolate and golden syrup stirring until there are no lumps. Then remove from the heat.",
+      "Mix in the digestive and marshmallows until everything is completely covered",
+      "Tip the mixture into a container, mix in any other inclusions and press it down.",
+      "Decorate however you like.",
+      "Put in the fridge until set."
+    ],
+    "image": "recipe-images/rockyroad.jpeg",
+    "time": "20 mins",
+    "allergens": "nut-free",
+    "updated": "01/01/2026",
+    "source": "https://www.bbcgoodfood.com/recipes/easy-rocky-road"
   }
 
 ]
