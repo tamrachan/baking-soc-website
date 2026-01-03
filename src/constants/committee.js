@@ -58,5 +58,11 @@ export const committeeMembers = [
         role: 'Website Developer/Manager',
         image: import.meta.env.BASE_URL + 'committee-images/tamra.jpg',
         bio: "Hi, I'm Tamra - the future website manager for Baking Soc and a direct entry student going into third year! I will look after the Baking Soc website, making sure everything is freshly updated, easy to navigate, and running smoothly. If you're wondering about the cookies on the website, don't worry, I've already eaten them for you :). I also have a nut allergy, so allergy awareness is important to me. Feel free to contact me about the upcoming website, allergies, or uni in general - I'm always happy to help!"
+    },
+    {
+        name: 'Ona Wright',
+        role: 'General Committee Member',
+        image: import.meta.env.BASE_URL + 'committee-images/ona.jpg',
+        bio: "Hello~ my name is Ona Wright. I'm one of the few members who hasn't done a lot of baking, so come find me if you need someone to commiserate... or of course if you have any questions about the society! (I will say though that I am an expert at 'getting a sweet treat' so hopefully that counts for something hehehe~)"
     }
 ];
